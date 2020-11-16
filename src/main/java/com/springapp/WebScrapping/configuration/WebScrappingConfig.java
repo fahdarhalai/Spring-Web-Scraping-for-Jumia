@@ -21,7 +21,7 @@ public class WebScrappingConfig implements WebMvcConfigurer {
     @Bean
     public Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/scraping", "root", "fahd.arh@gmail.com");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/scraping", "root", "PASSWORD");
         return conn;
     }
 
